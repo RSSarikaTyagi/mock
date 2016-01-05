@@ -1,0 +1,18 @@
+# Mac
+.DS_Store
+
+# Visual Studio
+*.suo
+obj/
+
+# JetBrains 
+.idea/
+
+# Vim
+*.swp
+*.swo
+*.swn
+
+# Generated
+README.html
+
