@@ -58,6 +58,13 @@
   color: #fff;
 }
 
+/*LOGIN PAGE*/
+.login-window{
+  float:none;
+  margin:10px auto;
+  text-align:center;
+}
+
 /*Recommender page*/
 #recommender-dashboard{
   position:relative;

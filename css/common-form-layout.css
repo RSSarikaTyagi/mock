@@ -16,11 +16,26 @@
   display:inline-block;
   width:60%;
 }
-.form-layout-textbox{
-  display:block;
-  float:left;
-  wodth:100%;
+.form-layout input[type="text"],.form-layout input[type="password"]{
+  display: block;
+  float: left;
+  width: 98%;
+  margin: 5px;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 2%;
 }
-.form-layout-button{
-
+.form-layout-button-panel{
+  margin: 10px 0;
+  float: left;
+  width: 100%;
+}
+.form-layout-button-panel button{
+  padding: 7px 30px;
+  border-radius: 10px;
+  color: #fff;
+  width: 77%;
+  background-color: #77A820;
+  border: 0;
+  word-wrap: break-word;
 }

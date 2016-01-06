@@ -75,6 +75,7 @@ jQuery(window).smartresize(function() {
 });
 
 $(document).ready(function(){
+  new WOW().init();
   var setHomeBannerHeight;
   setHomeBannerHeight = function () {
     var homeHeight = $(window).height();

@@ -9,6 +9,7 @@
       <script src="js/jquery.min.js"></script>
       <script src="js/bootstrap.min.js"></script>
       <script src="js/jquery.actual.min.js"></script>
+      <script src="js/wow.min.js"></script>
       <script src="js/less.min.js"></script>
       <!-- css -->
       <link rel="stylesheet" href="css/gmac.css">
@@ -52,7 +53,7 @@
             <div class="text-center starting-text wow animated zoomInDown">
               <h2>Welcome to GMAC</h2>
               <a href="#student-login" class="btn student-login-btn">Student Login</a>
-              <a href="#" class="btn recommender-login-btn">Recommender Login</a>
+              <a href="#recommender-login" class="btn recommender-login-btn">Recommender Login</a>
             </div>
           </section>
         </div><!-- overlay-1 -->
@@ -75,10 +76,16 @@
             </div>
           </div>	<!-- row -->
           <div class="row main_content">
-            <div class="col-md-4 col-sm-4 wow animated zoomIn" data-wow-delay="0.1s">
-              <input type="text" placeholder="Enrollment ID"/>
-              <input type="password" placeholder="Password"/>
-              <button>Login</button>
+            <div class="col-md-4 wow animated zoomIn login-window" data-wow-delay="0.1s">
+              <div class="form-layout">
+                  <div class="form-layout-row">
+                    <input type="text" placeholder="Enrollment ID"/>
+                    <input type="password" placeholder="Password"/>
+                    <div class="form-layout-button-panel">
+                      <button>Login</button>
+                    </div>
+                  </div>
+              </div>
             </div>	<!-- col-md-4 -->
           </div><!-- row main_content -->
         </div>	<!-- container -->
@@ -95,16 +102,22 @@
               <div class="recommender-login-window-img login-window-img "></div>
             </div>
           </div>	<!-- row -->
-          <div class="row about-us-text">
+          <div class="row">
             <div class="col-md-12">
               <p class="text-center">Login to your GMAC account with your email address and password</p>
             </div>
           </div>	<!-- row -->
           <div class="row main_content">
-            <div class="col-md-4 col-sm-4 wow animated zoomIn" data-wow-delay="0.1s">
-              <input type="text" placeholder="Email Address"/>
-              <input type="password" placeholder="Password"/>
-              <button onclick="location.href='recommender-dashboard.html'">Login</button>
+            <div class="col-md-4 wow animated zoomIn login-window" data-wow-delay="0.1s">
+              <div class="form-layout">
+                  <div class="form-layout-row">
+                    <input type="text" placeholder="Email Address"/>
+                    <input type="password" placeholder="Password"/>
+                    <div class="form-layout-button-panel">
+                      <button onclick="location.href='recommender-dashboard.html'">Login</button>
+                    </div>
+                  </div>
+              </div>
             </div>	<!-- col-md-4 -->
           </div><!-- row main_content -->
         </div>	<!-- container -->
@@ -119,33 +132,24 @@
                       <br/>
             </div>
           </div>	<!-- row -->
-          <div class="row about-us-text">
+          <div class="row about-us-text wow animated zoomIn" data-wow-delay="0.1s">
             <div class="col-md-12">
-              <p class="text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+              <h3>Lorem Ipsum is simply dummy text of the printing and</h3>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </div>
+            <div class="col-md-12">
+              <h3>Lorem Ipsum is simply dummy text of the printing and</h3>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </div>
+            <div class="col-md-12">
+              <h3>Lorem Ipsum is simply dummy text of the printing and</h3>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </div>
+            <div class="col-md-12">
+              <h3>Lorem Ipsum is simply dummy text of the printing and</h3>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
             </div>
           </div>	<!-- row -->
-          <div class="row main_content">
-            <div class="col-md-4 col-sm-4 wow animated zoomIn" data-wow-delay="0.1s">
-              <figure>
-                <img class="pro img-responsive center-block" src="img/3-col-icons-web.png" alt="image">
-              </figure>
-              <h5 class="text-center">RESPONSIVE</h5>
-            </div>	<!-- col-md-4 -->
-
-            <div class="col-md-4 col-sm-4 wow animated zoomIn" data-wow-delay="0.1s">
-              <figure>
-                <img class="pro img-responsive center-block" src="img/3-col-icons-android.png" alt="image">
-              </figure>
-              <h5 class="text-center">ANDROID</h5>
-            </div>	<!-- col-md-4 -->
-
-            <div class="col-md-4 col-sm-4 wow animated zoomIn" data-wow-delay="0.1s">
-              <figure>
-                <img class="pro img-responsive center-block" src="img/3-col-icons-iphone.png" alt="image">
-              </figure>
-              <h5 class="text-center">iOS</h5>
-            </div>	<!-- col-md-4 -->
-          </div><!-- row main_content -->
         </div>	<!-- container -->
       </section>	<!-- about us -->
 
@@ -155,8 +159,8 @@
           <div class="row text-center">
             <div class="bg-image">
               <div class="col-md-6 col-md-offset-3 text-center share-text wow animated zoomInDown heading-text">
-                        <p class="heading">
-                          If you got any questions, please do not hesitate to send us a message.
+                <p class="heading">
+                  If you got any questions, please do not hesitate to send us a message.
                 </p>
               </div>
             </div>
@@ -208,34 +212,10 @@
           <a href="#starting" class="up"><i class="fa fa-arrow-circle-up"></i></a>
         </div>
       </section><!-- footer -->
-
-      <!-- js -->
-      <script>
-        new WOW().init();
-      </script>
-      <script>
-        $( function() {
-
-          // change is-checked class on buttons
-            $('.button-group').each( function( i, buttonGroup )
-            {
-              var $buttonGroup =$( buttonGroup );
-              $buttonGroup.on( 'click', 'button', function()
-              {
-                  $buttonGroup.find('.is-checked').removeClass('is-checked');
-                  $( this ).addClass('is-checked');
-              });
-            });
-
-        });
-      </script>
           <script src="js/jquery-ui-1.10.3.min.js"></script>
           <script src="js/jquery.knob.js"></script>
           <script src="js/daterangepicker.js"></script>
           <script src="js/bootstrap3-wysihtml5.all.min.js"></script>
-          <script src="js/smoothscroll.js"></script>
-          <script src="js/nivo-lightbox/nivo-lightbox.min.js"></script>
           <script src="js/script.js"></script>
-
     </body>
   </html>
