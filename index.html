@@ -1,207 +1,241 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>GMAC::Graduate Management Admission Council</title>
-		<!-- meta -->
-		<meta charset="UTF-8">
-	    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <title>GMAC::Graduate Management Admission Council</title>
+      <!-- meta -->
+      <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- js -->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/jquery.actual.min.js"></script>
+      <script src="js/less.min.js"></script>
+      <!-- css -->
+      <link rel="stylesheet" href="css/gmac.css">
+    </head>
 
-		<!-- css -->
-		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<!-- <link rel="stylesheet" href="css/ionicons.min.css"> -->
-		<link rel="stylesheet" href="css/font-awesome.min.css">
-		<link rel="stylesheet" href="css/owl.carousel.css">
-		<link rel="stylesheet" href="css/owl.theme.css">
-		<link rel="stylesheet" href="css/owl.transitions.css">
-		<link rel="stylesheet" href="css/animate.css">
-		<link rel="stylesheet" href="js/nivo-lightbox/nivo-lightbox.css">
-		<link rel="stylesheet" href="js/nivo-lightbox/nivo-lightbox-theme.css">
-		<link rel="stylesheet" href="css/custom.css">
-	    <!-- js -->
-	    <script src="js/jquery.min.js"></script>
-	    <script src="js/bootstrap.min.js"></script>
-	    <script src="js/owl.carousel.min.js"></script>
-		<script src="js/wow.min.js"></script>
-		<script src="js/jquery.actual.min.js"></script>
-	</head>
+    <body data-spy="scroll" data-target="#navbar-example">
 
-	<body data-spy="scroll" data-target="#navbar-example">
+      <!-- ****************************** Preloader ************************** -->
+      <div id="preloader"></div>
+      <div id="wrapper">
+        <div id="overlay-1">
+          <section id="navigation-scroll">
+            <nav class="navbar navbar-default navbar-fixed-top">
+              <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-example">
+                    <span class="sr-only">Toggle navigation</span>
+                    <i class="fa fa-bars"></i>
+                  </button>
+                  <a class="navbar-brand" href="#starting">
+                    <img src="./img/logo.png" alt="GMAC" />
+                  </a>
+                </div>
 
-		<!-- ****************************** Preloader ************************** -->
-		<div id="preloader"></div>
-		<div id="wrapper">
-			<div id="overlay-1">
-				<section id="navigation-scroll">
-					<nav class="navbar navbar-default navbar-fixed-top">
-					  <div class="container">
-					    <!-- Brand and toggle get grouped for better mobile display -->
-					    <div class="navbar-header">
-					      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-example">
-					        <span class="sr-only">Toggle navigation</span>
-					        <i class="fa fa-bars"></i>
-					      </button>
-					      <a class="navbar-brand" href="#">GMAC</a>
-					    </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="navbar-example">
+                  <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#student-login">Student Login</a></li>
+                    <li><a href="#recommender-login">Recommender</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                  </ul>
+                </div><!-- /.navbar-collapse -->
+              </div><!-- /.container-fluid -->
+            </nav>	<!-- navbar -->
+          </section>	<!-- #navigation -->
 
-					    <!-- Collect the nav links, forms, and other content for toggling -->
-					    <div class="collapse navbar-collapse" id="navbar-example">
-					      <ul class="nav navbar-nav navbar-right">
-									<li><a href="#about" class="active">About</a></li>
-	    						<li><a href="#contact">Contact</a></li>
-					      </ul>
-					    </div><!-- /.navbar-collapse -->
-					  </div><!-- /.container-fluid -->
-					</nav>	<!-- navbar -->
-				</section>	<!-- #navigation -->
-				
 
-				<section id="starting">
-					<div class="text-center starting-text wow animated zoomInDown">
-						<h2>Welcome to GMAC</h2>
-						<a href="#" class="bttn apple-store btn btn-lg">
-							<img src="img/apple.png" alt="apple">
-							<p>DOWNLOAD FROM</p>
-							<h6>APPLE STORE</h6>
-						</a>
-						<a href="#" class="bttn google-play btn btn-lg">
-							<img src="img/play.png" alt="play">
-							<p>DOWNLOAD FROM</p>
-							<h6>GOOGLE PLAY</h6>
-						</a>
-					</div>
-				</section>
-				<div id="bottom" class="bottom text-center">
-			        <a href="#about"><i class="ion-ios7-arrow-down"></i></a>
-			    </div>
-			</div><!-- overlay-1 -->
-		</div>	<!-- wrapper -->		
-			
-		<!-- About Us -->
-		<section id="about">
-			<div class="container">
-				<div class="row text-center heading">
-					<div class="wow animated zoomInDown heading-text">
-						<h3>About Us</h3>
-	                	<hr class="full">
-	                	<br/>
-					</div>
-				</div>	<!-- row -->
-				<div class="row about-us-text">
-					<div class="col-md-12">
-						<p class="text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-					</div>
-				</div>	<!-- row -->
-				<div class="row main_content">
-					<div class="col-md-4 col-sm-4 wow animated zoomIn" data-wow-delay="0.1s">
-						<figure>
-							<img class="pro img-responsive center-block" src="img/3-col-icons-web.png" alt="image">
-						</figure>
-						<h5 class="text-center">RESPONSIVE</h5>
-					</div>	<!-- col-md-4 -->
+          <section id="starting">
+            <div class="text-center starting-text wow animated zoomInDown">
+              <h2>Welcome to GMAC</h2>
+              <a href="#student-login" class="btn student-login-btn">Student Login</a>
+              <a href="#" class="btn recommender-login-btn">Recommender Login</a>
+            </div>
+          </section>
+        </div><!-- overlay-1 -->
+      </div>	<!-- wrapper -->
 
-					<div class="col-md-4 col-sm-4 wow animated zoomIn" data-wow-delay="0.1s">
-						<figure>
-							<img class="pro img-responsive center-block" src="img/3-col-icons-android.png" alt="image">
-						</figure>
-						<h5 class="text-center">ANDROID</h5>
-					</div>	<!-- col-md-4 -->
+      <!-- Student Login-->
+      <section id="student-login">
+        <div class="container">
+          <div class="row text-center heading">
+            <div class="wow animated zoomInDown heading-text">
+              <h3>Student Login</h3>
+              <hr class="full">
+              <br/>
+              <div class="student-login-window-img login-window-img"></div>
+            </div>
+          </div>	<!-- row -->
+          <div class="row about-us-text">
+            <div class="col-md-12">
+              <p class="text-center">Login to your GMAC account with your enrollment id and password</p>
+            </div>
+          </div>	<!-- row -->
+          <div class="row main_content">
+            <div class="col-md-4 col-sm-4 wow animated zoomIn" data-wow-delay="0.1s">
+              <input type="text" placeholder="Enrollment ID"/>
+              <input type="password" placeholder="Password"/>
+              <button>Login</button>
+            </div>	<!-- col-md-4 -->
+          </div><!-- row main_content -->
+        </div>	<!-- container -->
+      </section>	<!-- Student Login-->
 
-					<div class="col-md-4 col-sm-4 wow animated zoomIn" data-wow-delay="0.1s">
-						<figure>
-							<img class="pro img-responsive center-block" src="img/3-col-icons-iphone.png" alt="image">
-						</figure>
-						<h5 class="text-center">iOS</h5>
-					</div>	<!-- col-md-4 -->
-				</div><!-- row main_content -->
-			</div>	<!-- container -->
-		</section>	<!-- about us -->
-		<!-- contact -->
-	    <section id="contact">
-	    	<div class="container text-center">
-				<div class="row text-center">
-					<div class="bg-image">
-						<div class="col-md-6 col-md-offset-3 text-center share-text wow animated zoomInDown heading-text">
-		                	<p class="heading">
-		                		If you got any questions, please do not hesitate to send us a message.
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="row text-center main_content">
-					<form method="post" action="#" class="">
-						<div class="col-md-4 col-md-offset-2 text-center">
-							<div class="form">
-								<div class="input-group margin-bottom-sm">
-	  								<span class="input-group-addon">
-	  									<i class="fa fa-user fa-fw"></i>
-	  								</span>
-								 	<input class="form-control" type="text" placeholder="Name" required>
-								</div>
-								<div class="input-group margin-bottom-sm">
-	  								<span class="input-group-addon">
-	  									<i class="fa fa-envelope-o fa-fw"></i>
-	  								</span>
-								 	<input class="form-control" name="email" type="email" placeholder="Email address" required>
-								</div>
-								<div class="input-group margin-bottom-sm">
-	  								<span class="input-group-addon">
-	  									<i class="fa fa-tags fa-fw"></i>
-	  								</span>
-								 	<input class="form-control" type="text" placeholder="Subject">
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 text-center">
-							<div class="form">
-								<div class="input-group margin-bottom-sm">
-									<span class="input-group-addon">
-										<i class="fa fa-comment-o fa-fw"></i>
-									</span>
-									<input type="text" name="text" class="form-control message" placeholder="Your Message">
-								</div>
-							</div>
-						</div>
-					</form>	
-				</div>
-				<input class="btn btn-sub" type="submit" value="Send Message">
-			</div>
-	    </section>	<!-- contacts --> 
-			
-		<!-- footer -->
-		<section id="footer" class="main-footer">
-			<div class="container">
-				<p>&copy; 2015 themewagon.com</p>
-				<a href="#starting" class="up"><i class="fa fa-arrow-circle-up"></i></a>
-			</div>
-		</section><!-- footer -->
+      <!-- Recommender Login-->
+      <section id="recommender-login">
+        <div class="container">
+          <div class="row text-center heading">
+            <div class="wow animated zoomInDown heading-text">
+              <h3>Recommender Login</h3>
+              <hr class="full">
+              <br/>
+              <div class="recommender-login-window-img login-window-img "></div>
+            </div>
+          </div>	<!-- row -->
+          <div class="row about-us-text">
+            <div class="col-md-12">
+              <p class="text-center">Login to your GMAC account with your email address and password</p>
+            </div>
+          </div>	<!-- row -->
+          <div class="row main_content">
+            <div class="col-md-4 col-sm-4 wow animated zoomIn" data-wow-delay="0.1s">
+              <input type="text" placeholder="Email Address"/>
+              <input type="password" placeholder="Password"/>
+              <button onclick="location.href='recommender-dashboard.html'">Login</button>
+            </div>	<!-- col-md-4 -->
+          </div><!-- row main_content -->
+        </div>	<!-- container -->
+      </section>	<!-- Recommender Login-->
+      <!-- About Us -->
+      <section id="about">
+        <div class="container">
+          <div class="row text-center heading">
+            <div class="wow animated zoomInDown heading-text">
+              <h3>About Us</h3>
+                      <hr class="full">
+                      <br/>
+            </div>
+          </div>	<!-- row -->
+          <div class="row about-us-text">
+            <div class="col-md-12">
+              <p class="text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </div>
+          </div>	<!-- row -->
+          <div class="row main_content">
+            <div class="col-md-4 col-sm-4 wow animated zoomIn" data-wow-delay="0.1s">
+              <figure>
+                <img class="pro img-responsive center-block" src="img/3-col-icons-web.png" alt="image">
+              </figure>
+              <h5 class="text-center">RESPONSIVE</h5>
+            </div>	<!-- col-md-4 -->
 
-		<!-- js -->
-		<script>
- 			new WOW().init();
-		</script>
-		<script>
-			$( function() {
-  
-			  // change is-checked class on buttons
-			  	$('.button-group').each( function( i, buttonGroup ) 
-			  	{
-			    	var $buttonGroup =$( buttonGroup );
-			    	$buttonGroup.on( 'click', 'button', function() 
-			    	{
-			      		$buttonGroup.find('.is-checked').removeClass('is-checked');
-			      		$( this ).addClass('is-checked');
-			    	});
-			  	});
-			  
-			});
-		</script>
-        <script src="js/jquery-ui-1.10.3.min.js"></script>
-        <script src="js/jquery.knob.js"></script>
-        <script src="js/daterangepicker.js"></script>
-        <script src="js/bootstrap3-wysihtml5.all.min.js"></script>
-        <script src="js/smoothscroll.js"></script>
-        <script src="js/nivo-lightbox/nivo-lightbox.min.js"></script>
-        <script src="js/script.js"></script>
-       
-	</body>
-</html>
+            <div class="col-md-4 col-sm-4 wow animated zoomIn" data-wow-delay="0.1s">
+              <figure>
+                <img class="pro img-responsive center-block" src="img/3-col-icons-android.png" alt="image">
+              </figure>
+              <h5 class="text-center">ANDROID</h5>
+            </div>	<!-- col-md-4 -->
+
+            <div class="col-md-4 col-sm-4 wow animated zoomIn" data-wow-delay="0.1s">
+              <figure>
+                <img class="pro img-responsive center-block" src="img/3-col-icons-iphone.png" alt="image">
+              </figure>
+              <h5 class="text-center">iOS</h5>
+            </div>	<!-- col-md-4 -->
+          </div><!-- row main_content -->
+        </div>	<!-- container -->
+      </section>	<!-- about us -->
+
+      <!-- contact -->
+        <section id="contact">
+          <div class="container text-center">
+          <div class="row text-center">
+            <div class="bg-image">
+              <div class="col-md-6 col-md-offset-3 text-center share-text wow animated zoomInDown heading-text">
+                        <p class="heading">
+                          If you got any questions, please do not hesitate to send us a message.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row text-center main_content">
+            <form method="post" action="#" class="">
+              <div class="col-md-4 col-md-offset-2 text-center">
+                <div class="form">
+                  <div class="input-group margin-bottom-sm">
+                      <span class="input-group-addon">
+                        <i class="fa fa-user fa-fw"></i>
+                      </span>
+                    <input class="form-control" type="text" placeholder="Name" required>
+                  </div>
+                  <div class="input-group margin-bottom-sm">
+                      <span class="input-group-addon">
+                        <i class="fa fa-envelope-o fa-fw"></i>
+                      </span>
+                    <input class="form-control" name="email" type="email" placeholder="Email address" required>
+                  </div>
+                  <div class="input-group margin-bottom-sm">
+                      <span class="input-group-addon">
+                        <i class="fa fa-tags fa-fw"></i>
+                      </span>
+                    <input class="form-control" type="text" placeholder="Subject">
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 text-center">
+                <div class="form">
+                  <div class="input-group margin-bottom-sm">
+                    <span class="input-group-addon">
+                      <i class="fa fa-comment-o fa-fw"></i>
+                    </span>
+                    <input type="text" name="text" class="form-control message" placeholder="Your Message">
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <input class="btn btn-sub" type="submit" value="Send Message">
+        </div>
+        </section>	<!-- contacts -->
+
+      <!-- footer -->
+      <section id="footer" class="main-footer">
+        <div class="container">
+          <p>&copy; 2015 GMAC</p>
+          <a href="#starting" class="up"><i class="fa fa-arrow-circle-up"></i></a>
+        </div>
+      </section><!-- footer -->
+
+      <!-- js -->
+      <script>
+        new WOW().init();
+      </script>
+      <script>
+        $( function() {
+
+          // change is-checked class on buttons
+            $('.button-group').each( function( i, buttonGroup )
+            {
+              var $buttonGroup =$( buttonGroup );
+              $buttonGroup.on( 'click', 'button', function()
+              {
+                  $buttonGroup.find('.is-checked').removeClass('is-checked');
+                  $( this ).addClass('is-checked');
+              });
+            });
+
+        });
+      </script>
+          <script src="js/jquery-ui-1.10.3.min.js"></script>
+          <script src="js/jquery.knob.js"></script>
+          <script src="js/daterangepicker.js"></script>
+          <script src="js/bootstrap3-wysihtml5.all.min.js"></script>
+          <script src="js/smoothscroll.js"></script>
+          <script src="js/nivo-lightbox/nivo-lightbox.min.js"></script>
+          <script src="js/script.js"></script>
+
+    </body>
+  </html>

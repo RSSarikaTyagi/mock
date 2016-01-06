@@ -1,0 +1,70 @@
+@import "ionicons.min.css";
+@import "font-awesome.min.css";
+@import "bootstrap.min.css";
+@import "animate.css";
+@import "custom.css";
+@import "common-form-layout.css";
+
+/* Nav Bar*/
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+  background-color:#fff;
+}
+
+/* Icon Buttons */
+
+.student-login-btn,.recommender-login-btn{
+  height: 60px;
+  background: #4d6da6;
+  position: relative;
+  line-height: 18px;
+  color:#fff;
+  width:250px;
+  margin:15px;
+}
+.student-login-btn:before,.recommender-login-btn:before{
+  font-family:"Ionicons";
+  font-size:60px;
+  color:#fff;
+  position: relative;
+  top: 22px;
+}
+.student-login-btn:before,.student-login-window-img:before{
+  content:"\f213";
+}
+.recommender-login-btn:before,.recommender-login-window-img:before{
+  content:"\f212";
+}
+.student-login-btn:hover,.recommender-login-btn:hover,.student-login-btn:focus,.recommender-login-btn:focus{
+  color:#fff;
+}
+/* Default CSS*/
+.login-window-img{
+  padding: 50px;
+  width: 200px;
+  height: 200px;
+  background-color: #4d6da6;
+  border-radius: 200px;
+  margin: 10px auto 20px auto;
+}
+.login-window-img:before{
+  font-family: "Ionicons";
+  font-size: 117px;
+  color: #fff;
+  position: relative;
+  top: -43px;
+}
+.welcome-note{
+  float: right;
+  color: #fff;
+}
+
+/*Recommender page*/
+#recommender-dashboard{
+  position:relative;
+  top:100px;
+}
+#lor-list ul li{
+  float: left;
+  display: block;
+  width:100%;
+}
